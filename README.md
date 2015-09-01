@@ -1,3 +1,7 @@
-# swift-a-day
+# Swift A Day
 
-#test
+Source projects for my personal experiments on swiftaday.com
+
+✨👋Linda
+
+
