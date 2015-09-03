@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0FE704C-303A-4715-80A7-0077A6B8959D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Accelerometer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>417C0B6190230D72BA6948611B920FE1A34E6B57</key>
+		<string>https://github.com/lindadong/swift-a-day.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Accelerometer-Shapes/Accelerometer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>417C0B6190230D72BA6948611B920FE1A34E6B57</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lindadong/swift-a-day.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>417C0B6190230D72BA6948611B920FE1A34E6B57</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>417C0B6190230D72BA6948611B920FE1A34E6B57</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swift-a-day</string>
+		</dict>
+	</array>
+</dict>
+</plist>
