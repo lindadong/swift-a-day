@@ -29,9 +29,11 @@ class ViewController: UIViewController {
             
             var touchPosition = touch.locationInView(self.view)
             
+            // Gets the eye's center
             let currentPositionL = leftPupil.frame.origin
             let currentPositionR = rightPupil.frame.origin
             
+            // Calculates angle between touch position and the eyes
             var angleL = atan2(currentPositionL.y - touchPosition.y, currentPositionL.x - touchPosition.x)
             var angleR = atan2(currentPositionR.y - touchPosition.y, currentPositionR.x - touchPosition.x)
             
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
             let damping : CGFloat = 0.3
             let animationVelocity : CGFloat = 0.5
             
-            
+            // usingSpringWithDamping
             UIView.animateWithDuration(duration,
                 delay: 0.0,
                 usingSpringWithDamping: damping,
