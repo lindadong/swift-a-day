@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Hex Color Convenience Function
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
@@ -32,14 +33,16 @@ class ViewController: UIViewController {
     var subviews = [UIView]()
     var count : CGFloat = 1
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(netHex: 0x0a2038)
+        
+        // Add Squares to the scene
         let shapeCount = 12
         for i in 0..<shapeCount {
             
+            // Make each iteration's width grow exponentially. I'm sure there is a better way of doing this
             count *= 1.7
             var width = 40 * CGFloat(i) + count
             var height = width
@@ -53,6 +56,7 @@ class ViewController: UIViewController {
             squareView.layer.borderColor = UIColor(netHex: 0x88f85c).CGColor
             squareView.alpha = 0.1 * CGFloat(shapeCount - i)
             
+            // Add glow onto the squares. Rasterization helps performance
             squareView.layer.shouldRasterize = true
             squareView.layer.rasterizationScale = 1
             squareView.layer.shadowColor = UIColor.yellowColor().CGColor
@@ -64,11 +68,9 @@ class ViewController: UIViewController {
             subviews.append(squareView)
         }
         
-        println(subviews)
         animator = UIDynamicAnimator(referenceView: view)
         
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,8 +81,10 @@ class ViewController: UIViewController {
         
         let tapPoint: CGPoint = sender.locationInView(view)
         
+        // Need to add this to get snap to animate more than once
         self.animator.removeAllBehaviors()
         
+        // Attaches a new implementation of UISnapBehavior for every square
         for i in 0..<subviews.count {
             var index = subviews[i]
             
@@ -88,6 +92,7 @@ class ViewController: UIViewController {
             let random = arc4random_uniform(1000)
             snapBehavior.damping = 0.7
             
+            // Uses Grand Central Dispatch to delay snap behavior based on the order of the subviews
             let seconds = Double(i)/2 * 0.1
             let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
             var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
