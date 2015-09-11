@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFCDE0331B9FC88F001AF541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCDE0321B9FC88F001AF541 /* AppDelegate.swift */; };
+		BFCDE0351B9FC88F001AF541 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCDE0341B9FC88F001AF541 /* art.scnassets */; };
+		BFCDE0371B9FC88F001AF541 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCDE0361B9FC88F001AF541 /* GameViewController.swift */; };
+		BFCDE03A1B9FC88F001AF541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCDE0381B9FC88F001AF541 /* Main.storyboard */; };
+		BFCDE03C1B9FC88F001AF541 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCDE03B1B9FC88F001AF541 /* Images.xcassets */; };
+		BFCDE03F1B9FC88F001AF541 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCDE03D1B9FC88F001AF541 /* LaunchScreen.xib */; };
+		BFCDE04B1B9FC88F001AF541 /* TorusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCDE04A1B9FC88F001AF541 /* TorusTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFCDE0451B9FC88F001AF541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCDE0251B9FC88F001AF541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCDE02C1B9FC88F001AF541;
+			remoteInfo = Torus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFCDE02D1B9FC88F001AF541 /* Torus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCDE0311B9FC88F001AF541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCDE0321B9FC88F001AF541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFCDE0341B9FC88F001AF541 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BFCDE0361B9FC88F001AF541 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BFCDE0391B9FC88F001AF541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFCDE03B1B9FC88F001AF541 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFCDE03E1B9FC88F001AF541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BFCDE0441B9FC88F001AF541 /* TorusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCDE0491B9FC88F001AF541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCDE04A1B9FC88F001AF541 /* TorusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorusTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFCDE02A1B9FC88F001AF541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCDE0411B9FC88F001AF541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFCDE0241B9FC88F001AF541 = {
+			isa = PBXGroup;
+			children = (
+				BFCDE02F1B9FC88F001AF541 /* Torus */,
+				BFCDE0471B9FC88F001AF541 /* TorusTests */,
+				BFCDE02E1B9FC88F001AF541 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFCDE02E1B9FC88F001AF541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDE02D1B9FC88F001AF541 /* Torus.app */,
+				BFCDE0441B9FC88F001AF541 /* TorusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFCDE02F1B9FC88F001AF541 /* Torus */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDE0321B9FC88F001AF541 /* AppDelegate.swift */,
+				BFCDE0341B9FC88F001AF541 /* art.scnassets */,
+				BFCDE0361B9FC88F001AF541 /* GameViewController.swift */,
+				BFCDE0381B9FC88F001AF541 /* Main.storyboard */,
+				BFCDE03B1B9FC88F001AF541 /* Images.xcassets */,
+				BFCDE03D1B9FC88F001AF541 /* LaunchScreen.xib */,
+				BFCDE0301B9FC88F001AF541 /* Supporting Files */,
+			);
+			path = Torus;
+			sourceTree = "<group>";
+		};
+		BFCDE0301B9FC88F001AF541 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDE0311B9FC88F001AF541 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFCDE0471B9FC88F001AF541 /* TorusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDE04A1B9FC88F001AF541 /* TorusTests.swift */,
+				BFCDE0481B9FC88F001AF541 /* Supporting Files */,
+			);
+			path = TorusTests;
+			sourceTree = "<group>";
+		};
+		BFCDE0481B9FC88F001AF541 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFCDE0491B9FC88F001AF541 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFCDE02C1B9FC88F001AF541 /* Torus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCDE04E1B9FC88F001AF541 /* Build configuration list for PBXNativeTarget "Torus" */;
+			buildPhases = (
+				BFCDE0291B9FC88F001AF541 /* Sources */,
+				BFCDE02A1B9FC88F001AF541 /* Frameworks */,
+				BFCDE02B1B9FC88F001AF541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Torus;
+			productName = Torus;
+			productReference = BFCDE02D1B9FC88F001AF541 /* Torus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFCDE0431B9FC88F001AF541 /* TorusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCDE0511B9FC88F001AF541 /* Build configuration list for PBXNativeTarget "TorusTests" */;
+			buildPhases = (
+				BFCDE0401B9FC88F001AF541 /* Sources */,
+				BFCDE0411B9FC88F001AF541 /* Frameworks */,
+				BFCDE0421B9FC88F001AF541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCDE0461B9FC88F001AF541 /* PBXTargetDependency */,
+			);
+			name = TorusTests;
+			productName = TorusTests;
+			productReference = BFCDE0441B9FC88F001AF541 /* TorusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFCDE0251B9FC88F001AF541 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Linda Dong";
+				TargetAttributes = {
+					BFCDE02C1B9FC88F001AF541 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BFCDE0431B9FC88F001AF541 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BFCDE02C1B9FC88F001AF541;
+					};
+				};
+			};
+			buildConfigurationList = BFCDE0281B9FC88F001AF541 /* Build configuration list for PBXProject "Torus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFCDE0241B9FC88F001AF541;
+			productRefGroup = BFCDE02E1B9FC88F001AF541 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFCDE02C1B9FC88F001AF541 /* Torus */,
+				BFCDE0431B9FC88F001AF541 /* TorusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFCDE02B1B9FC88F001AF541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCDE03F1B9FC88F001AF541 /* LaunchScreen.xib in Resources */,
+				BFCDE03C1B9FC88F001AF541 /* Images.xcassets in Resources */,
+				BFCDE0351B9FC88F001AF541 /* art.scnassets in Resources */,
+				BFCDE03A1B9FC88F001AF541 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCDE0421B9FC88F001AF541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFCDE0291B9FC88F001AF541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCDE0371B9FC88F001AF541 /* GameViewController.swift in Sources */,
+				BFCDE0331B9FC88F001AF541 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCDE0401B9FC88F001AF541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCDE04B1B9FC88F001AF541 /* TorusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFCDE0461B9FC88F001AF541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCDE02C1B9FC88F001AF541 /* Torus */;
+			targetProxy = BFCDE0451B9FC88F001AF541 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFCDE0381B9FC88F001AF541 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCDE0391B9FC88F001AF541 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFCDE03D1B9FC88F001AF541 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCDE03E1B9FC88F001AF541 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFCDE04C1B9FC88F001AF541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFCDE04D1B9FC88F001AF541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFCDE04F1B9FC88F001AF541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Torus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFCDE0501B9FC88F001AF541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Torus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BFCDE0521B9FC88F001AF541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torus.app/Torus";
+			};
+			name = Debug;
+		};
+		BFCDE0531B9FC88F001AF541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torus.app/Torus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFCDE0281B9FC88F001AF541 /* Build configuration list for PBXProject "Torus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCDE04C1B9FC88F001AF541 /* Debug */,
+				BFCDE04D1B9FC88F001AF541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCDE04E1B9FC88F001AF541 /* Build configuration list for PBXNativeTarget "Torus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCDE04F1B9FC88F001AF541 /* Debug */,
+				BFCDE0501B9FC88F001AF541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCDE0511B9FC88F001AF541 /* Build configuration list for PBXNativeTarget "TorusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCDE0521B9FC88F001AF541 /* Debug */,
+				BFCDE0531B9FC88F001AF541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFCDE0251B9FC88F001AF541 /* Project object */;
+}
