@@ -86,7 +86,6 @@ class ViewController: UIViewController {
 
         //Places the circle in the view
         var circleView = CircleView(frame: CGRectMake(self.view.frame.midX, self.view.frame.midY, diameter, diameter))
-        view.addSubview(circleView)
         
         //Sets a random duration for the animation between 2-3 seconds
         let randomDuration = Double(arc4random())/Double(UInt32.max) + 2
