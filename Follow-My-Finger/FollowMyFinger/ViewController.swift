@@ -13,69 +13,57 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftPupil: UIImageView!
     @IBOutlet weak var rightPupil: UIImageView!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        if let touch:UITouch = touches.first as? UITouch {
+    func handleTouch(touch: UITouch, animated: Bool) {
+        // Get the touch position
+        let touchPosition = touch.locationInView(self.view)
+        
+        // Gets the eye's center
+        let currentPositionL = leftPupil.frame.origin
+        let currentPositionR = rightPupil.frame.origin
+        
+        // Calculates angle between touch position and the eyes
+        let angleL = atan2(currentPositionL.y - touchPosition.y, currentPositionL.x - touchPosition.x)
+        let angleR = atan2(currentPositionR.y - touchPosition.y, currentPositionR.x - touchPosition.x)
+        
+        // Perform or animate
+        let operations = {
+            self.leftPupil.transform = CGAffineTransformMakeRotation(angleL + CGFloat(M_PI/2))
+            self.rightPupil.transform = CGAffineTransformMakeRotation(angleR + CGFloat(M_PI/2))
+        }
+        
+        if animated {
+            let duration: NSTimeInterval = 1.0
+            let delay: NSTimeInterval = 0.0
+            let damping: CGFloat = 0.3
+            let animationVelocity: CGFloat = 0.5
             
-            var touchPosition = touch.locationInView(self.view)
-            
-            // Gets the eye's center
-            let currentPositionL = leftPupil.frame.origin
-            let currentPositionR = rightPupil.frame.origin
-            
-            // Calculates angle between touch position and the eyes
-            var angleL = atan2(currentPositionL.y - touchPosition.y, currentPositionL.x - touchPosition.x)
-            var angleR = atan2(currentPositionR.y - touchPosition.y, currentPositionR.x - touchPosition.x)
-            
-            let duration : NSTimeInterval = 1.0
-            let delay :NSTimeInterval = 1.0
-            let damping : CGFloat = 0.3
-            let animationVelocity : CGFloat = 0.5
-            
-            // usingSpringWithDamping
             UIView.animateWithDuration(duration,
-                delay: 0.0,
+                delay: delay,
                 usingSpringWithDamping: damping,
                 initialSpringVelocity: animationVelocity,
-                options: .CurveEaseInOut, 
-                animations: {
-                    self.leftPupil.transform = CGAffineTransformMakeRotation(angleL + CGFloat(M_PI/2))
-                    self.rightPupil.transform = CGAffineTransformMakeRotation(angleR + CGFloat(M_PI/2))
-                },
-                completion: {success in })
-            
-            
+                options: .CurveEaseInOut,
+                animations: operations,
+                completion: { success in })
+        } else {
+            operations()
         }
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        if let touch:UITouch = touches.first as? UITouch {
-            
-            var touchPosition = touch.locationInView(self.view)
-            
-            let currentPositionL = leftPupil.frame.origin
-            let currentPositionR = rightPupil.frame.origin
-            
-            var angleL = atan2(currentPositionL.y - touchPosition.y, currentPositionL.x - touchPosition.x)
-            var angleR = atan2(currentPositionR.y - touchPosition.y, currentPositionR.x - touchPosition.x)
-            
-            leftPupil.transform = CGAffineTransformMakeRotation(angleL + CGFloat(M_PI/2))
-            rightPupil.transform = CGAffineTransformMakeRotation(angleR + CGFloat(M_PI/2))
-            
-            
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
         }
+        
+        handleTouch(touch, animated: true)
     }
-
-
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        
+        handleTouch(touch, animated: false)
+    }
+    
 }
 
